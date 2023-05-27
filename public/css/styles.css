@@ -1,0 +1,108 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+main{
+    width: 100%;
+    margin: auto;
+}
+
+header{
+    
+    display: block;
+    width: 100%;
+    background-color: #EAC926;
+}
+
+#search-bar{
+    margin: auto;
+}
+
+#search-bar a img{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.search{
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type=search]{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border:0;
+}
+
+.search button[type=submit]{
+    background-color: #EAC926;
+    border: 0;
+    padding-left:10px;
+}
+
+#main-nav, #login-bar, #frase{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+/*PRODUCTOS*/
+
+.producto img{
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+
+
+
+/*Estilos de textos*/
+
+#ofertas h2, #ultimas-vistas h2{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size:16px;
+}
+
+
+/* FOOTER */
+
+footer{
+    margin-top:100px;
+    text-align: center;
+    padding: 80px;
+}
+
+footer article{
+    padding-bottom: 20px;
+}
+footer article h4{
+    color:#666; 
+}
+footer article p{
+    font-size: 12px;
+    color: #666;
+}
