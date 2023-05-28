@@ -6,14 +6,10 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
 /*HEADER*/
-
-main{
-    width: 100%;
-    margin: auto;
-}
 
 header{
     
@@ -62,12 +58,35 @@ header{
 
 /*PRODUCTOS*/
 
-.producto img{
-    width: 400px;
-    height: auto;
+main{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.producto{
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 15px;
 }
 
 
+#ultimas-vistas .producto img, #ofertas .producto img{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+
+}
+
+.circulo-camion{
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 11px;
+    margin: 15px 0px 10px 0px;
+}
 
 
 
@@ -77,14 +96,23 @@ header{
 
 #ofertas h2, #ultimas-vistas h2{
     font-size: 24px;
+    text-align: center;
+    color:  #666;
+    padding: 20px 0px;
 }
 
 .precio{
     font-size: 18px;
 }
 
-.descuentos{
+.descuento{
+    padding-top: 5px;
     font-size:16px;
+    color: #39b54a;
+}
+
+.nombre-producto{
+    padding-top:30px;
 }
 
 
@@ -93,16 +121,30 @@ header{
 footer{
     margin-top:100px;
     text-align: center;
-    padding: 80px;
+    padding: 20px 80px;
 }
 
 footer article{
-    padding-bottom: 20px;
+    padding: 30px 0px;
 }
 footer article h4{
+    padding-top: 20px;
+    padding-bottom:10px;
     color:#666; 
+    font-weight: bolder;
 }
 footer article p{
     font-size: 12px;
     color: #666;
+}
+
+footer .fa-solid::before{
+    font-size: 2em;
+    margin-bottom:10px;
+}
+
+#copyright p{
+    padding-top: 20px;
+    color: #666;
+    font-size: 12px;
 }
