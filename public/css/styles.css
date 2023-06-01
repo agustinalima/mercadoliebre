@@ -12,19 +12,24 @@ body{
 /*HEADER*/
 
 header{
-    
-    display: block;
     width: 100%;
     background-color: #EAC926;
 }
 
-#search-bar{
+header div{
+    width: 75%;
+    margin: auto;
+}
+
+
+#search-bar, #main-nav{
+    display: flex;
     margin: auto;
 }
 
 #search-bar a img{
     display: block;
-    width: 300px;
+    width: 150px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -42,6 +47,8 @@ header{
     padding: 5px 20px;
     border-radius: 5px;
     border:0;
+    width: 50%;
+
 }
 
 .search button[type=submit]{
@@ -50,16 +57,31 @@ header{
     padding-left:10px;
 }
 
-#main-nav, #login-bar, #frase{
-    padding-bottom: 15px;
-    text-align: center;
+#main-nav{
+    justify-content: space-between;
 }
 
+#search-bar{
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-bar p{
+    width: 30%;
+}
+
+
+
+#main-nav ul{
+    display: flex;
+    list-style: none;
+}
 
 /*PRODUCTOS*/
 
 main{
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     
 }
@@ -68,6 +90,11 @@ main{
     background-color: white;
     margin-bottom: 40px;
     padding: 15px;
+}
+
+.contenedor-productos{
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -90,13 +117,10 @@ main{
 
 
 
-
-
 /*Estilos de textos*/
 
 #ofertas h2, #ultimas-vistas h2{
     font-size: 24px;
-    text-align: center;
     color:  #666;
     padding: 20px 0px;
 }
