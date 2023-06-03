@@ -13,7 +13,7 @@ body{
 
 header{
     width: 100%;
-    background-color: #EAC926;
+    background-color: #fff159;
 }
 
 header div{
@@ -31,9 +31,6 @@ header div{
     display: block;
     width: 150px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
 }
 
 .search{
@@ -47,18 +44,20 @@ header div{
     padding: 5px 20px;
     border-radius: 5px;
     border:0;
-    width: 50%;
+    width: 70%;
+    height: 40px;
 
 }
 
 .search button[type=submit]{
-    background-color: #EAC926;
+    background-color: #fff159;
     border: 0;
     padding-left:10px;
 }
 
 #main-nav{
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 #search-bar{
@@ -69,14 +68,48 @@ header div{
 
 #search-bar p{
     width: 30%;
+    color: #333333;
 }
-
-
 
 #main-nav ul{
     display: flex;
     list-style: none;
 }
+
+#main-nav ul:first-child li{
+    color: rgba(51,51,51,.6);
+}
+
+#main-nav ul:last-child li{
+    color: #333333;
+}
+
+#main-nav ul:first-child li{
+    margin-right: 20px;
+}
+
+#main-nav ul:last-child li{
+    margin-left: 20px;
+}
+
+/*MENU BURGER
+
+.burger{
+    display: none;
+}*/
+
+.burger{
+
+    display: flex;
+    background-color: #3483fa;
+    height: 40px;
+    width: 45px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
 
 /*PRODUCTOS*/
 
@@ -90,6 +123,28 @@ main{
     background-color: white;
     margin-bottom: 40px;
     padding: 15px;
+    margin-left: 20px;
+    height: 570px;
+    transition: all 0.6s  ease-out;
+}
+
+.producto:hover{
+    height: 610px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.producto .descripcion{
+    padding-top: 25px;
+    visibility: hidden;
+    color: gray;
+    opacity: 0;
+}
+
+.producto:hover .descripcion{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+    transition: all 1s  ease-in;
 }
 
 .contenedor-productos{
@@ -99,7 +154,7 @@ main{
 
 
 #ultimas-vistas .producto img, #ofertas .producto img{
-    width: 400px;
+    width: 100%;
     height: auto;
     margin: auto;
     display: block;
@@ -115,14 +170,28 @@ main{
     margin: 15px 0px 10px 0px;
 }
 
+#ultimas-vistas{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
+/* BANNER */
 
+.banner{
+    width: 100%;
+    height: 40vh;
+    background-image: url(/img/img-home-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
 /*Estilos de textos*/
 
 #ofertas h2, #ultimas-vistas h2{
     font-size: 24px;
     color:  #666;
     padding: 20px 0px;
+    margin-left: 20px;
 }
 
 .precio{
@@ -145,8 +214,10 @@ main{
 footer{
     margin-top:100px;
     text-align: center;
-    padding: 20px 80px;
+    background-color: white;
+    padding: 50px 0px;
 }
+
 
 footer article{
     padding: 30px 0px;
@@ -172,3 +243,104 @@ footer .fa-solid::before{
     color: #666;
     font-size: 12px;
 }
+
+footer section:first-child{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+
+#copyright{
+    padding-top:10px;
+    border-top: 1px solid #ebebeb;
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 480px) {
+    /* phones */
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .banner{
+        width: 100%;
+        height: 15vh;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .contenedor-productos{
+        flex-direction: column;
+    }
+
+    .producto{
+        width: 100%;
+        height: 500px;
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    #search-bar{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    #main-nav{
+        display: none;
+    }
+
+    header div, main{
+        width: 100%;
+    }
+
+    #search-bar a img{
+        width: 200px;
+        height: auto;
+        padding-top:20px;
+    }
+
+    #search-bar p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search input[type=search]{
+        width: 80%;
+    
+    }
+
+
+
+    #ultimas-vistas .producto img, #ofertas .producto img{
+        width: 300px;
+        height: auto;
+    
+    }
+
+    main{
+        padding: 0px 20px;
+    }
+
+    footer section:first-child{
+        flex-wrap: wrap;
+    }
+
+    #ofertas h2, #ultimas-vistas h2{
+        margin-left: 0px;
+    }
+    
+
+}
+
+
+
