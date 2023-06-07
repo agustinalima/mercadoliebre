@@ -1,0 +1,45 @@
+.registro h1{
+    margin-top:20px;
+}
+
+
+.register-form{
+    background-color: white;
+    border: 1px solid #c8cbce;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.register-form label{
+    margin: 10px 0;
+    display: block;
+}
+
+.register-form input{
+    height: 3vh;
+    border: 1px solid #c8cbce;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.register-form button{
+    border:0;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 1vw;
+    background-color: #c8cbce;
+    color: gray;
+    margin-top: 20px;
+}
+
+
+
+.register-form button:last-child{
+    background-color: #3483fa;
+    color: white;
+    margin-left: 10px;
+}
+
+
+

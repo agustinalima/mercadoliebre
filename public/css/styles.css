@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #ebebeb;
 }
 
@@ -127,6 +127,7 @@ main{
     width: 33%;
     height: 570px;
     transition: all 0.6s  ease-out;
+    border-radius: 10px;
 }
 
 .producto:hover{
