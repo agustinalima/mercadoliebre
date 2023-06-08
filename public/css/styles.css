@@ -131,13 +131,14 @@ main{
     padding: 15px;
     margin-left: 20px;
     width: 33%;
-    height: 570px;
+    height: 510px;
     transition: all 0.6s  ease-out;
     border-radius: 10px;
+    position: relative;
 }
 
 .producto:hover{
-    height: 610px;
+    height: 550px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -146,6 +147,11 @@ main{
     visibility: hidden;
     color: gray;
     opacity: 0;
+}
+
+.producto .precio, .producto .descuento{
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .producto:hover .descripcion{
@@ -172,10 +178,14 @@ main{
 
 .circulo-camion{
     border: 1px solid #39b54a;
+    background-color: white;
     border-radius: 50%;
     display: inline-block;
     padding: 11px;
     margin: 15px 0px 10px 0px;
+    position: absolute;
+    right: 20px;
+    bottom: 20%;
 }
 
 #ultimas-vistas{
@@ -204,6 +214,7 @@ main{
 
 .precio{
     font-size: 18px;
+
 }
 
 .descuento{
@@ -305,8 +316,58 @@ footer section:first-child{
         width: calc(50% - 10px); /* Cambia el ancho a la mitad menos el margen entre elementos */
         margin-left: 0;
         margin-bottom: 20px;
-        height: 430px;
+        height: 350px;
     }
+
+    /**/
+
+    .burger{
+        display: flex;
+        margin-left: auto; /* Agrega esta línea */
+    }
+
+    #search-bar{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main-nav{
+        display: none;
+    }
+
+    #search-bar a{
+        width: 80%;
+    }
+    #search-bar a img{
+        width: 200px;
+        height: auto;
+        padding-top:20px;
+        padding-left: 15px;
+    }
+
+    #search-bar p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search input[type=search]{
+        width: 90%;
+    
+    }
+
+    .circulo-camion{
+        bottom: 25%;
+    }
+
+    footer article{
+        padding: 50px 0px;
+        margin-left:20px;
+    }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -315,6 +376,8 @@ footer section:first-child{
     body{
         overflow-x: hidden;
     }
+
+
 
     .banner{
         width: 100%;
@@ -329,20 +392,23 @@ footer section:first-child{
 
     .producto{
         width: 100%;
-        height: 500px;
+        height: 450px;
         margin: 0px;
         margin-top: 30px;
     }
 
+
     .burger{
         display: flex;
+        margin-left: auto; /* Agrega esta línea */
     }
 
     #search-bar{
         flex-wrap: wrap;
         margin-bottom: 0;
         padding-bottom: 20px;
-        justify-content: flex-end;
+        display: flex;
+        justify-content: space-between;
     }
 
     #main-nav{
@@ -353,6 +419,9 @@ footer section:first-child{
         width: 100%;
     }
 
+    #search-bar a{
+        width: 80%;
+    }
     #search-bar a img{
         width: 200px;
         height: auto;
@@ -388,6 +457,11 @@ footer section:first-child{
 
     #ofertas h2, #ultimas-vistas h2{
         margin-left: 0px;
+    }
+
+    footer article{
+        padding: 50px 0px;
+        margin-left:0px;
     }
     
 

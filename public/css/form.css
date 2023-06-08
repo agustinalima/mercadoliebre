@@ -16,10 +16,11 @@
 .img-login img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 
 }
 
-.register-form h1{
+.register-form h1 {
     padding-bottom: 20px;
 }
 
@@ -59,7 +60,7 @@
     border: 0;
     border-radius: 5px;
     padding: 10px 40px;
-    font-size: 1vw;
+    font-size: 15px;
     background-color: #c8cbce;
     color: gray;
     margin-top: 20px;
@@ -86,13 +87,19 @@
 
 
 
-.categorias label, .recordarme label{
+.categorias label,
+.recordarme label {
     margin-right: 20px;
     align-items: center;
 }
 
-.recordarme label:first-child{
-    color:#3483fa;
+.recordarme label:first-child {
+    color: #3483fa;
+}
+
+.opcion {
+    color: rgba(51, 51, 51, .6);
+    font-size: 14px;
 }
 
 
@@ -111,11 +118,27 @@
 
     .register-form {
         width: 100%;
+        padding: 40px;
     }
+
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="date"],
+    .register-form input[type="password"],
+    .register-form input[type="file"] {
+        width: 100%;
+    }
+
+
+    .dos-columnas button {
+        width: calc(50% - 40px);
+        /* Resta el valor del padding izquierdo (10px en este caso) */
+    }
+
 }
 
-.login-button{
+.login-button {
     width: 80% !important;
-    margin-left:0 !important;
+    margin-left: 0 !important;
 
 }
